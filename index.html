@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Data Science for Economists by Prem Woods</title>
+    <title>Document</title>
 
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index.css">
@@ -25,14 +25,15 @@
 <body>
     <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
     <div class="myWeek1">
-        <h1>Data Science for Economists by Prem Woods.</h1>
+        <h1>Data Science for Economists by Prem Woods
+        </h1>
         
-        <h3>Covid-19</h3>
-        <p>The first chart tracks the UK budget deficit as a percentage of UK GDP.</p>
+        <h3>UK Cost of Borrowing</h3>
+        <p>The first chart tracks the rate of interest the UK government pays on newly issued 1-year and 10-year gilts (government bonds).</p>
         <div class="chart" id="Chart1"></div>
 
-        <h3>Productivity puzzle</h3>
-        <p>My second chart looks at productivity in the UK</p>
+        <h3>UK Policy Rate</h3>
+        <p>My second chart depicts the base rate of interest set by the Bank of England from 1975 to present</p>
         <div class="chart" id="Chart2"> </div>
     </div> 
 </body>
@@ -40,8 +41,8 @@
 
 <script>
     //Define charts:
-    var myChart1 = "ONSGDP.json";
-    var myChart2 = "chart2_ukProductivity.json";
+    var myChart1 = "govtYields_dark.json";
+    var myChart2 = "bankRate.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
