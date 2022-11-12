@@ -9,8 +9,8 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(171, 193, 221);
- 
+    background-color: 
+    rgb(59, 120, 200);
 }
 
 
@@ -25,7 +25,7 @@ h1, h2, h3, p{
     
     margin: auto;
     /* max-width: 600px; */
-    background-color: rgb(171, 193, 221);
+    /* background-color: rgb(171, 193, 221); */
     /* background-color: rgb(152, 175, 201); */
 
     /* align-items: center;
@@ -40,8 +40,21 @@ h1, h2, h3, p{
 
   body {
     margin: 40px;
-  }
+      background-image: url('circles.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode: screen;
+      
+      }
+      
   
+  .standard{
+    display: block;
+    background-color: rgb(152, 175, 201),
+    color rgb(152, 175, 201);
+  }
+
   .wrapper {
     display: grid;
     grid-template-columns: 50% 50% ;    
@@ -50,7 +63,7 @@ h1, h2, h3, p{
   }
   
   .box {
-    background-color: rgb(61, 84, 111);
+    background-color: rgb(152, 183, 225);
     color: #fff;
     padding: 20px;
     font-size: 150%;
@@ -104,3 +117,41 @@ h1, h2, h3, p{
   border-color: black;
   text-align: center;
 }
+
+hr{
+  border: transparent;
+  color: black;
+  width: 70%;
+  border-top: 3px solid ;
+  border-color: rgb(255, 255, 255);
+  animation: pulse 4s infinite;
+}
+
+a{
+  background-color: rgb(152, 183, 225);
+
+  padding: 20px;
+
+  border: 2px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 10px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: black;
+
+  text-decoration: none;
+}
+a:hover{
+
+  background-color: rgb(152, 183, 225);
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+
+}
+
+.heading{ background-color: rgb(152, 183, 225);
+  padding: 0px;
+  font-size: 150%;}
