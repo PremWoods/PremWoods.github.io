@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+   
+<style>
+    .row {
+          display: grid;
+          grid-template-columns: 300px 300px;
+        }
+    .column {
+          padding: 16px;
+          height: 250px;
+        }
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Data Science Portfolio</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="mypage">
+        <h1>Data Science Portfolio </h1> 
+
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="project.html">My Project: Impact of global conflict on Aid to Africa</a>
+        <!-- <div class="blocks"> -->
+            <!-- <p>The first chart tracks the rate of interest the UK government pays on newly issued 1-year and 10-year gilts (government bonds).</p> -->
+            <!-- <div class="chart" id="Chart1"></div> -->
+            <!-- <p>My second chart depicts the base rate of interest set by the Bank of England from 1975 to present</p> -->
+            <!-- <div class="chart" id="Chart2"> </div> -->
+        
+</body>
+<hr>
+<div class="standard">
+    <div class="heading">
+        <h3>Week 1</h3>
+</div> </div>
+    <div class="wrapper">
+        <div class="box a">
+            <h3>UK Cost of Borrowing</h3>
+            
+            <p>The first chart tracks the rate of interest the UK government pays on newly issued 1-year and 10-year gilts (government bonds).</p>
+            <div class="chart" id="Chart1"></div>
+            
+        </div>
+        <div class="box b"><h3> UK Policy Rate </h3>
+            <p>My second chart depicts the base rate of interest set by the Bank of England from 1975 to present</p>
+            <div class="chart" id="Chart2"></div>
+           
+        </div> </div>
+
+     <div class="standard">
+            <div class="heading">
+                <h3>Week 2</h3>
+        </div> </div>
+<div class="wrapper">
+        <div class="box c"><h3>IMF Lending</h3>
+            <p>Below is the total value of IMF issued loans outstanding, in $.</p>
+            <div class="chart" id="Chart3"></div>
+        </div>
+
+
+        <div class="box d"><h3>IMF lending over GDP</h3>
+            <p>Below is the total value of IMF loans issued as a percentage of global GDP.</p>
+            <div class="chart" id="Chart4"></div>
+
+        </div>  </div>
+        <div class="standard"><div class="heading">
+        <p>The FT article purports the narrative that  IMF lending is at an all time high in nominal values. However, when representing IMF SDRs relative to global GDP, it is evident that lending in 1984 was...    </p>
+    </div> </div>
+
+     <div class="standard">
+            <div class="heading">
+                <h3>Week 3</h3>
+                <p>Below is Official Development Assistance (ODA) as a percentage of Gross National Income for USA, Germany, UK, and France </p>
+                <div class="chart" id="Chart5"></div>
+
+        </div> </div>
+    <div class="standard">
+            <div class="heading">
+                <h3>Week 4</h3>
+                <p>collab link: https://github.com/PremWoods/PremWoods.github.io/blob/main/Week4.ipynb</p>
+                <div class="chart" id="Chart6"></div>
+                <div class="standard"><div class="heading">
+                    <p> This site was chosen because... </p>
+                </div> </div>
+
+        </div> </div>
+
+     <div class="standard">
+            <div class="heading">
+                <h3>Week 5</h3>
+                <p> Iteration to batch download, creating nine graphs: collab link: https://github.com/PremWoods/PremWoods.github.io/blob/main/Week4.ipynb</p>
+                <div class="chart" id="Chart7"></div>
+                <div class="chart" id="Chart8"></div>
+                <div class="chart" id="Chart9"></div>
+        
+                <div class="standard"><div class="heading">
+                    <p></p>
+                </div> </div>
+
+        </div> </div>
+
+
+
+
+<div class="wrapper">
+
+        <div class="box f">E</div>
+        <div class="box g">F</div>
+      </div>
+
+<script>
+    //Define charts:
+    var myChart1 = "govtYields_dark.json";
+    var myChart2 = "bankRate.json";
+    var myChart3 = "IMFLending.json";
+    var myChart4 = "SDR_over_GDP.json"; 
+    var myChart5 = "ODA_GNI.json";
+    var myChart6 = "Happiness.json"
+    var myChart7 = "chart_ONS_ANNX.json"
+    var myChart8 = "chart_ONS_RUTO.json"
+    var myChart9 = "chart_ONS_RUTN.json"
+    var myChart10 = "data_ONS--ANNX.json"
+    var myChart11 = "data_ONS--ANNX.json"
+    var myChart12 = "data_ONS--ANNX.json"
+    var myChart13 = "data_ONS--ANNX.json" 
+    var myChart14 = "data_ONS--ANNX.json"
+    var myChart15 = "data_ONS--ANNX.json"
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1); 
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+
+    vegaEmbed('#Chart7', myChart7); 
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13); 
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15)
+
+
+</script>
+
+</html>
+
