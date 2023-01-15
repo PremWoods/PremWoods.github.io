@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "SAS litter",
+    "title": {
+  
+      "text": "UK beach litter - by brand",
+  
+      "subtitle": "Share of litter found. Source: SAS 2021 Brand Audit.",
+  
+      "subtitleFontStyle":"italic",
+  
+      "subtitleFontSize":10,
+  
+      "anchor": "start",
+  
+      "color": "black"
+   },
+  
+    "data": {"url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/Happiness.csv"},
+    "mark":{
+  
+   
+  
+        "type": "bar",
+  
+        "color": "#86d0bb",
+  
+        "strokeWidth":2,
+  
+        "opacity":1
+  
+   
+  
+      },
+    "height": 1250,
+    "width": 250,
+  
+    "encoding": {
+      "y": {"field": "Country", "type": "nominal", "sort":[], "title": null},
+  
+  
+  
+  
+      "x": {"field": "Happiness Index Score", "type": "quantitative", "title": null, "scale": {"domain": [0, 18]}}
+   
+  
+      }
+  
+  
+  }

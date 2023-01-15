@@ -1,0 +1,43 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+    "text": "Map of Africa",
+    "subtitle": [
+    "With country boundary",
+    ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+    },
+    "config": {
+    "background": "white",
+    "view": {
+    "stroke": "transparent"
+    }
+    },
+    "width": 300,
+    "height": 400,
+    
+    
+    "data": {
+    "url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/AfricaOutline",
+    "format": {
+      "property":"features"}
+    },
+    "projection": {
+    "type": "naturalEarth1"
+    },
+    
+    "mark": {
+    "type": "geoshape",
+    "fill": "darkgray",
+    "stroke": "white",
+    "strokeWidth": 0.3
+    },
+    
+    "encoding": {
+      "tooltip":{"field":"properties.name", "type": "nominal"}
+    }
+    }
