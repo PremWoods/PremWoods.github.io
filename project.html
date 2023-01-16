@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+   
+<style>
+    .row {
+          display: grid;
+          grid-template-columns: 300px 300px;
+        }
+    .column {
+          padding: 16px;
+          height: 250px;
+        }
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Data Science Project</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
+    <div class="mypage">
+        <h1>Data Science Project </h1> 
+
+        <a href="portfolio.html">My Portfolio</a>
+        <a href="project.html">My Project</a>
+        <a href= "https://github.com/PremWoods/PremWoods.github.io">My Github</a>
+        <!-- <div class="blocks"> -->
+            <!-- <p>The first chart tracks the rate of interest the UK government pays on newly issued 1-year and 10-year gilts (government bonds).</p> -->
+            <!-- <div class="chart" id="Chart1"></div> -->
+            <!-- <p>My second chart depicts the base rate of interest set by the Bank of England from 1975 to present</p> -->
+            <!-- <div class="chart" id="Chart2"> </div> -->
+        
+</body>
+<hr>
+<div class="standard">
+    <div class="heading">
+        <h3> Is the UK Doing Enough to Justifiably Claim to be a Global Development Superpower?</h>
+</div> </div>
+
+<div class="standard">
+    <div class="heading">
+        <p>Whilst the UK boasts of a historically distinguished reputation on the gloabl development stage, of late, internal political affairs have dominated the focus of both government and press, allowing 
+            foreign policy to slip down the national agenda. </p>
+</div> </div>
+
+<div class="standard">
+    <div class="heading">
+        <p> In 2020 the UK's Foreign Aid budget (Official Development Assistance, ODA) was reduced from its pre-pandemic level of over 0.7% of GNI, which was guided by  UN international guidelines, to 0.5%. The return to 0.7% is not expected until 2028 at the earliest. Despite these cuts, the then Foreign Secretary, Dominic Raab, assured the nation that the "The UK remains a world leader in international development". 
+            This project sets out to explore the validity of this claim. </p>
+</div> </div>
+
+<div class="standard">
+    <div class="heading">
+        <h3>Refugees and Asylum Seekers </h3>
+        <p>The past decade has seen a surge in the total quantity of refugees globally, with 2021's global figure reaching double that of ten years prior. The UK has come under scrutiny for its 
+            contribution to house refugees. As the two figures below highlight, the surge of forced migration is being shouldered by lower income African and Asian countries. Germany and France are clear European front runners, hosting 3 million and 1.1 million across the two years respectively - compared with the UK's total of 0.25 million (World Bank). 
+        </p>
+<div class="wrapper">
+    <div class="box a">
+        
+        
+                    <div class="chart" id="Chartone"></div>
+            
+        </div>
+        <div class="box a">
+            <div class="chart" id="Chart2"></div>
+           
+        </div> </div>
+        </div> </div>
+
+     <div class="standard">
+            <div class="heading">
+                <h3>Official development Aid (ODA) budget</h3>
+                <p>Having previously been one of seven adhering to the UN mandate of 0.7% of GNI, the UK slips substantially down the rankings given the revised ODA budget. It seems evident that to be considered
+                    a "world leader" on the international development stage, a country must either be committing a larger portion of their GNI, or, as in the case of the US, contributing large sums in absolute terms. Perhaps a case for efficiency of spend can be made, but as I touch on later,
+                the UK spends half of its foreign aid budget internally.</p>
+<div class="wrapper">
+        <div class="box a">
+           
+            <div class="chart" id="Chart3"></div>
+        </div>
+
+            <div class="chart" id="Chart4"></div>
+        </div> </div>
+    </div> </div>
+
+    <div class="standard">
+        <div class="heading">
+            <h3> The implications of geopolitics and the pandemic on Africa</h3>
+            <p> The graph below uses the 2014 Crimean Crisis as a case study for aid flow dynamics. Many countries diverted aid from Africa in order
+                to fund new comittments to Ukraine. The same dynamics have emerged in 2022, as the UK has already committed 50% of its humanitarian aid budget up to 2025 to support Ukraine.  
+                It is crucial to recognise that whilst supporting countries during crisis is imperetive, when the diversion of funds coincides with a reduction in the Aid budget, There are guaranteed to be ramifications of significant magnitude. 
+                In 2020 UNstats.org reported an 11% global increase in Extreme Poverty (less than $1.90 a day), the first increase since 1998. 
+            </p>
+            <div class="chart" id="Chartfive"></div>
+            
+            
+    
+            <div class="standard"><div class="heading">
+                <p></p>
+            </div> </div>
+
+    </div> </div>
+
+    <div class="standard">
+        <div class="heading">
+            <h3>Is global aid being allocated correctly?</h3>
+            <p>Given the aforementioned global trends, and the Centre for Global Development's report that over a half of the UK's ODA budget post-pandemic does not leave the UK, instead being spent on processing and housing refugees for instance, I explore the relationship between ODA flows and need.
+                In both figures I deploy a linear regression method to explore whether there is a strong correlation between the destination of Aid and a proxy for need. The first figure builds upon the 2014 case-study, finding only a correlation of only 4% between ODA flows and the percentage of population living in Extreme Poverty. The second supports this narrative,
+                finding a correlation of only 11% between ODA flows and the Human Development Index. 
+             </p>
+<div class="wrapper">
+    <div class="box a">
+       
+        <div class="chart" id="Chart7"></div>
+    </div>
+    
+        <div class="chart" id="Chart8"></div>
+    </div> </div>
+</div> </div>
+
+<div class="standard">
+    <div class="heading">
+        <h3>Conclusion</h3>
+        <p> The UK has irrefutably fallen behind its peers with respect to refugee intake, ODA commitments, and ODA efficacy. A consolidation of the UK aid budget to increase efficiency, and a targetted programme by which countries in the most need are prioritised, seem a strong strarting point if the UK wishes to return to its former status as a Global Development Superpower. 
+        </p>
+        
+    </div> </div>
+</div> </div>
+
+<div class="standard">
+    <div class="heading">
+        <h3>Data & Challenges</h3>
+        <p> A reliable source of data was the World Bank API, however, I would often combine this with data from another source, for instance, figures one and two use UNHCR data. The inconsistency of country names required that I use
+            a key as a dictionary in order to match various name variations with codes, allowing me to then merge dataframes.
+            Another challenge I consistently faced was that up to date information when dealing with macroeconomic datasets is hard to come by. I frequently encountered data hosted on PDF reports or webpages rather than CSVs and would have to 
+            use libraries such as Beautifulsoup and Tabula to access the data. 
+        </p>
+
+        <a href ="https://github.com/PremWoods/PremWoods.github.io/blob/main/Project_code.ipynb">Python Code</a>. 
+        
+    </div> </div>
+</div> </div>
+   
+
+       
+<script>
+    //Define charts:
+    var myChart1 = "2020_scatter_GDP_Refugees.json";
+    var myChart2 = "2021_scatter_GDP_Refugees.json";
+    var myChart3 = "ODA_GNIperc2020.json";
+    var myChart4 = "ODA_GNIperc2021.json"; 
+    var myChart5 = "AID_SSA_UKR.json";
+    var myChart6 = "Happiness.json";
+    var myChart7 = "ODA_EXTPOV_2014.json";
+    var myChart8 = "2020_LinReg.json";
+
+
+
+    vegaEmbed('#Chartone', myChart1); 
+    vegaEmbed('#Chart2', myChart2);
+    vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chartfive', myChart5);
+    vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+
+
+</script>
+
+</html>
+
