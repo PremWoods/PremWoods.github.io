@@ -1,11 +1,10 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "SAS litter",
+    "description": "Happiness Index",
     "title": {
   
-      "text": "UK beach litter - by brand",
+      "text": "Country Ranking in terms of the latest (2021 or 2020) Happiness Index",
   
-      "subtitle": "Share of litter found. Source: SAS 2021 Brand Audit.",
   
       "subtitleFontStyle":"italic",
   

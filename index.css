@@ -66,7 +66,7 @@ h1, h2, h3, p{
     background-color: rgb(152, 183, 225);
     color: #fff;
     padding: 20px;
-    font-size: 150%;
+    font-size: 100%;
   }
   
 
@@ -118,6 +118,17 @@ h1, h2, h3, p{
   text-align: center;
 }
 
+#Chartfive{
+  background-color: rgb(152, 175, 201);
+  width: 493px;
+  height: 388px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: black;
+  text-align: center;}
+
+
 hr{
   border: transparent;
   color: black;
@@ -125,6 +136,15 @@ hr{
   border-top: 3px solid ;
   border-color: rgb(255, 255, 255);
   animation: pulse 4s infinite;
+}
+b{
+  color: blue;
+  text-decoration: none;
+
+}
+
+b:hover{
+  text-decoration: underline;
 }
 
 a{
@@ -155,3 +175,5 @@ a:hover{
 .heading{ background-color: rgb(152, 183, 225);
   padding: 0px;
   font-size: 150%;}
+
+  

@@ -19,7 +19,7 @@
   "height": 400,
   "width":400,
   
-  "mark": "line",
+  "mark": "bar",
   "encoding": {
     "x":{"field":"Year", "type": "nominal"},
     "y":{"field": "ODA/GNI", "type": "quantitative"},

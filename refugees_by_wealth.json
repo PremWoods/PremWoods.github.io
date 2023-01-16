@@ -1,5 +1,4 @@
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "An interactive scatter plot of global health statistics by country and year.",
     "data": {"url": "https://raw.githubusercontent.com/PremWoods/PremWoods.github.io/main/refugee.json"},
      
@@ -46,13 +45,13 @@
           "x": {
             "field": "refugees_asylum",
             "type": "quantitative",
-            "scale": {"domain": [0, 4000000]},
+            "scaxyzle": {"domain": [0, 4000000]},
             "axis": {"tickCount": 10, "title": "Refugees/Asylum Seekers Taken"}
           },
           "y": {
             "field": "GDP_CAP",
             "type": "quantitative",
-            "scale": {"domain": [0, 250000]},
+            "scaxyzle": {"domain": [0, 250000]},
             "axis": {"tickCount": 10, "title": "GDP per Capita"}
           }
         },
